@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary-color: rgb(15, 15, 15)
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@layer utilities {
+  .text-primary {
+    @apply text-[var(--primary-color)];
+  }
+}
+
+@layer components {
+  .navlink {
+
+    @apply font-unsans text-[14px] font-semibold leading-[1.7em] text-[rgb(15_15_15)] uppercase text-start
+  }
+
+  /* about */
+  .herorightwrap {
+    @apply [-webkit-font-smoothing:inherit] bg-[#cdef5c] justify-center place-content-center items-center flex flex-[0_0_auto] [flex-flow:row] gap-[10px] h-min overflow-hidden p-[10px] relative w-min
+  }
+
+  .herobignum {
+    @apply text-primary b9214:text-[60px] text-[72px] font-semibold leading-[1.15em] tracking-[-2px] uppercase
+  }
+
+  .herorighttext {
+    @apply text-primary font-semibold text-[18px] leading-[1.7em] tracking-[0px] text-start
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.MuiAccordionSummary-contentGutters {
+  @apply w-full !my-0
+}
+
+.MuiAccordionSummary-gutters {
+  @apply !p-0
+}
+
+.MuiAccordion-root {
+  @apply !mt-5
+}
+
+.MuiAccordion-root.Mui-expanded {
+  @apply !mt-5
+}
+
+.MuiAccordion-gutters {
+  @apply !pb-0
+}
+
+.MuiAccordion-gutters.Mui-expanded {
+  @apply !pb-5
+}
+
+.MuiAccordionSummary-gutters.Mui-expanded {
+  @apply p-0
+}
+
+.MuiAccordionDetails-root {
+  @apply !p-0
+}
+
+.MuiAccordion-heading {
+  @apply !w-full
+}
+
+.MuiAccordionSummary-root {
+  @apply w-full
+}
