@@ -8,7 +8,11 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'b9214': { 'min': '992px', 'max': '1439px' }
+        't91': { 'max': '991px' },
+        't767': { 'max': '767px' },
+        'b9214': { 'min': '992px', 'max': '1439px' },
+        'b791': { 'min': '768px', 'max': '991px' },
+        // 'a14': { 'min': '1440px' }
       }
       ,
       fontFamily: {

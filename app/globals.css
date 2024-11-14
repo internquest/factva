@@ -33,7 +33,7 @@
   }
 
   .herobignum {
-    @apply text-primary b9214:text-[60px] text-[72px] font-semibold leading-[1.15em] tracking-[-2px] uppercase
+    @apply text-primary t767:text-[36px] b9214:text-[60px] text-[72px] font-semibold leading-[1.15em] tracking-[-2px] uppercase
   }
 
   .herorighttext {
