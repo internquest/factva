@@ -1,13 +1,16 @@
 import React from 'react'
+import Revealcomp from './Revealcomp'
 
 const Header1 = () => {
     return (
         <header data-framer-name="Hero Section" name="Hero Section" class="box-border [-webkit-font-smoothing:inherit] place-content-center items-center flex flex-[0_0_auto] [flex-flow:column] gap-0 h-min overflow-hidden t767:pt-[50px] t767:px-[20px] t767:pb-[140px] b791:pt-[70px] b791:px-[30px] b791:pb-[300px] b9214:pt-[85px] b9214:px-[20px] b9214:pb-[400px] pt-[80px] px-5 pb-[600px] relative w-full">
             <div data-framer-name="Container" name="Container" class="box-border [-webkit-font-smoothing:inherit] items-start flex flex-[0_0_auto] [flex-flow:column] t767:gap-[40px] t767:max-w-[390px] b791:gap-[50px] b791:max-w-[768px] b9214:gap-[60px] gap-[74px] h-min max-w-[98%] overflow-visible p-0 relative w-full">
                 <div data-framer-name="Hero Content" name="Hero Content" class="box-border [-webkit-font-smoothing:inherit] items-start flex flex-[0_0_auto] [flex-flow:column] gap-[20px] h-min overflow-visible p-0 relative w-full order-none">
-                    <div data-framer-component-type="RichTextContainer" class="box-border [-webkit-font-smoothing:inherit] relative flex-[0_0_auto] h-auto max-w-[1370px] [transform:perspective(1200px)] whitespace-pre-wrap w-full break-words outline-[none] flex flex-col justify-start flex-shrink-0 opacity-100">
-                        <h1 data-styles-preset="SNJlpIiLm" class="text-[var(--primary-color)] t767:text-[42px] b791:text-[60px] b9214:text-[80px] text-[112px] leading-[1.15em] tracking-[-2px] font-semibold text-start">FACTIVA IS THE LEADING SOLAR FACTORY.</h1>
-                    </div>
+                    {/* <div data-framer-component-type="RichTextContainer" class="box-border [-webkit-font-smoothing:inherit] relative flex-[0_0_auto] h-auto max-w-[1370px] [transform:perspective(1200px)] whitespace-pre-wrap w-full break-words outline-[none] flex flex-col justify-start flex-shrink-0 opacity-100"> */}
+                    <Revealcomp classes='box-border [-webkit-font-smoothing:inherit] relative flex-[0_0_auto] h-auto max-w-[1370px] [transform:perspective(1200px)] whitespace-pre-wrap w-full break-words outline-[none] flex flex-col justify-start flex-shrink-0 opacity-100'>
+                        <h1 data-styles-preset="SNJlpIiLm" className="text-[var(--primary-color)] t767:text-[42px] b791:text-[60px] b9214:text-[80px] text-[112px] leading-[1.15em] tracking-[-2px] font-semibold text-start">FACTIVA IS THE LEADING SOLAR FACTORY.</h1>
+                    </Revealcomp>
+                    {/* </div> */}
                     <div data-framer-name="Paragraph" name="Paragraph" class="box-border [-webkit-font-smoothing:inherit] place-content-center items-center flex flex-[0_0_auto] [flex-flow:row] gap-[10px] h-min max-w-[820px] b791:max-w-[unset] b791:p-0 t767:w-full b791:w-[95%] overflow-hidden t767:p-0 pl-[50px] pr-0 py-0 a14:pl-[130px] b9214:p-0 b9214:pl-[50px] b9214:w-[70%] relative w-[70%]">
                         <div data-framer-component-type="RichTextContainer" class="box-border [-webkit-font-smoothing:inherit] relative flex-[1_0_0px] h-auto opacity-80 [transform:perspective(1200px)] whitespace-pre-wrap w-px break-words outline-[none] flex flex-col justify-start flex-shrink-0">
                             <p data-styles-preset="gYGyZZBvZ" class="text-primary font-normal leading-[1.6em] tracking-[-.5px] text-start text-[24px]">With over 5,000 solar installations powering households across the state, our record speaks for itself.</p>
